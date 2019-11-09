@@ -582,3 +582,11 @@
         }
         document.getElementById('hasil').innerHTML=text;
     }
+
+    function myFunction56() {
+        var text = '';
+        for ($i in alamat) {
+            text += alamat[$i] + " ";
+        }
+        document.getElementById('hasil').innerHTML=text;
+    }
