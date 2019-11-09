@@ -590,3 +590,10 @@
         }
         document.getElementById('hasil').innerHTML=text;
     }
+
+    function myFunction57() {
+        var text;
+        for (text of dusun) {
+            document.write(text + ' ');
+        }
+    }
