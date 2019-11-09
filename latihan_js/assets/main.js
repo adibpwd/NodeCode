@@ -11,7 +11,7 @@
     user = 5000;
     user2 = 5000;
     barang = 10000;
- 
+    var string = 'purwodadi'; 
     var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
     var day = ["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"]
     var d = Date();
@@ -596,4 +596,21 @@
         for (text of dusun) {
             document.write(text + ' ');
         }
+    }
+
+    function myFunction58() {
+        var text;
+        for (text of string) {
+            document.write(text + '<br>');
+        }
+    }
+
+    function myFunction59() {
+        var text = '';
+        $i = 0;
+        while ($i < 10) {
+            text += 'looping ' + $i + ' ';
+            $i++;
+        }
+        document.getElementById('hasil').innerHTML= text;
     }
