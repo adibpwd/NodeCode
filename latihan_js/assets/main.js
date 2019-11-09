@@ -607,10 +607,73 @@
 
     function myFunction59() {
         var text = '';
-        $i = 0;
-        while ($i < 10) {
-            text += 'looping ' + $i + ' ';
-            $i++;
+        var i = 0;
+        while (i < 10) {
+            text += 'looping ' + i + ' ';
+            i++;
         }
         document.getElementById('hasil').innerHTML= text;
     }
+
+    function myFunction60() {
+        var text = '';
+        var i = 0;
+        do {
+            text += 'loop ' + i + ' ';
+            i++;
+        } while (i < 10);
+        document.getElementById('hasil').innerHTML= text;
+    }
+
+    function myFunction61() {
+        var text = '';
+        var i = 0;
+        for(;dusun[i];) {
+            text += 'dusun ' + dusun[i] + '. ';
+            i++;
+        }
+        document.getElementById('hasil').innerHTML= text;
+    }
+
+    function myFunction62() {
+        var text = '';
+        var i = 0;
+        while (dusun[i]) {
+            text += ' dusun ' + dusun[i] + ' ';
+            i++; 
+        }
+        document.getElementById('hasil').innerHTML=text;
+    }
+
+    function myFunction63() {
+        var text = '';
+        var i = 0;
+        while (dusun[i]) {
+            text += ' dusun ' + dusun[i] + ' ';
+            i++;
+            if (i >= 3) {
+                break;
+            } else {
+                text += document.getElementById('hasil').innerHTML= ',' ;
+            }
+        }
+        document.getElementById('hasil').innerHTML=text;
+    }
+
+   
+    function myFunction64() {
+        var text = '';
+        var i = 0;
+        while (dusun[i]) {
+            text += ' dusun ' + dusun[i] + ' ';
+            i++;
+            if (i >= 3) {
+                continue;
+            } else {
+                text += document.getElementById('hasil').innerHTML= ',' ;
+            }
+        }
+        document.getElementById('hasil').innerHTML=text;
+    }
+
+   
