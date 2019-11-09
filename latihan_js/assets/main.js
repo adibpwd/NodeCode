@@ -574,3 +574,11 @@
       }
      document.getElementById("hasil").innerHTML = "Today is " + day;
     }
+
+    function myFunction55() {
+        var text = '';
+        for (i = 0; i < 5; i++) {
+            text += 'ulangi ' + i + 'x ';
+        }
+        document.getElementById('hasil').innerHTML=text;
+    }
